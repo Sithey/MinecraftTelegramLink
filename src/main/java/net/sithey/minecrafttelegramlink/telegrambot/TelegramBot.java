@@ -317,9 +317,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         execute(message);
     }
 
-    // ... (The rest of the methods have been documented in the previous response)
-
-
     /**
      * Send the join message
      * @param player Player
