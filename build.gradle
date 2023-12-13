@@ -1,0 +1,40 @@
+apply plugin: 'java'
+
+group 'MinecraftTelegramLink'
+version '0.1'
+compileJava.options.encoding = 'UTF-8'
+sourceCompatibility = 1.17
+
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+
+    maven {
+        url = 'https://jitpack.io'
+    }
+
+}
+
+configurations{
+    extraLibs
+}
+
+dependencies {
+    implementation ("io.papermc.paper:paper-api:1.20.2-R0.1-SNAPSHOT")
+    extraLibs group: 'org.telegram', name: 'telegrambots', version: '6.8.0'
+    extraLibs 'com.github.Smuddgge:SquishyYaml:1.1.0'
+
+    configurations.implementation.extendsFrom(configurations.extraLibs)
+}
+
+jar{
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    from {
+        configurations.extraLibs.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

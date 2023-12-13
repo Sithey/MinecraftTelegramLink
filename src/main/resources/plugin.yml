@@ -1,0 +1,6 @@
+name: MinecraftTelegramLink
+author: Sithey
+version: 0.1
+main: net.sithey.minecrafttelegramlink.Main
+website: https://www.sharpheberg.com
+api-version: 1.13
