@@ -1,5 +1,10 @@
 # MinecraftTelegramLink
 
+https://www.spigotmc.org/resources/minecrafttelegramlink-1-7-10-1-20-2.113948/
+
+![miniature](https://github.com/Sithey/MinecraftTelegramLink/assets/44400280/2a6ce68c-42ba-410c-8f71-309bba9e9511)
+
+
 **Description:**
 
 MinecraftTelegramLink is a versatile Telegram bot designed to enhance your Minecraft server management experience. Built with BotFather, this bot enables you to send commands to the server console, receive the latest.log updates on Telegram, and keep track of the number of online players.
@@ -37,6 +42,8 @@ The bot seamlessly integrates with your Minecraft server through a plugin. Simpl
 4. Launch your server.
 
 5. Enjoy seamless communication and control over your Minecraft server through Telegram.
+
+https://www.youtube.com/watch?v=AUTmnM2S2Mc
 
 **Note:**
 Ensure that your Telegram bot has the necessary permissions to access and interact with your server.
